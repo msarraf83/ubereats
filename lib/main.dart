@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-import 'package:ubereats/view/authScreens/mobileLoginScreen.dart';
+import 'package:uber_eats/view/authScreens/otpScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: ThemeData(),
-          home: MobileLoginScreen());
+          home: OTPScreen());
     });
   }
 }

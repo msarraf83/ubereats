@@ -2,8 +2,8 @@ import 'package:country_picker/country_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sizer/sizer.dart';
-import 'package:ubereats/utils/colors.dart';
-import 'package:ubereats/utils/textStyles.dart';
+import 'package:uber_eats/utils/colors.dart';
+import 'package:uber_eats/utils/textStyles.dart';
 
 class MobileLoginScreen extends StatefulWidget {
   const MobileLoginScreen({super.key});
@@ -55,7 +55,9 @@ class _MobileLoginScreenState extends State<MobileLoginScreen> {
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(4.sp),
-                        color: greyShade3),
+                        border: Border.all(color:grey),
+                        // color: greyShade3
+                    ),
                     child: Text(
                       selectedCountry,
                       style: AppTextStyles.body14,
@@ -74,8 +76,8 @@ class _MobileLoginScreenState extends State<MobileLoginScreen> {
                           EdgeInsets.symmetric(vertical: 0, horizontal: 2.w),
                       hintText: 'Mobile number',
                       hintStyle: AppTextStyles.textFieldHintTextStyle,
-                      filled: true,
-                      fillColor: greyShade3,
+                      // filled: true,
+                      // fillColor: greyShade3,
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(5),
                         borderSide: BorderSide(
@@ -124,7 +126,7 @@ class _MobileLoginScreenState extends State<MobileLoginScreen> {
                   Positioned(
                     right: 2.w,
                     child: Icon(
-                      Icons.arrow_forward,
+                      Icons.arrow_right_outlined,
                       color: white,
                       size: 4.h,
                     ),
